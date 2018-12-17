@@ -1,0 +1,24 @@
+{
+    "name": "Unlimited HBR reading",
+    "version": "1.0",
+    "description": "Remove 3 article limit from HBR",
+    "permissions": ["activeTab", "declarativeContent", "storage", "cookies", "tabs", "http://*/*", "https://*/*"],
+    "content_scripts": [
+    	{
+        	"matches": ["*://*.hbr.org/*"],
+    	    "js": ["js/content.js"]
+   	 	}
+	],
+    "background": {
+	    "scripts": ["js/background.js"],
+    	"persistent": true
+    },
+
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    },
+    "manifest_version": 2
+}
