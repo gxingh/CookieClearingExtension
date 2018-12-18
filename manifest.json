@@ -1,11 +1,11 @@
 {
-    "name": "Unlimited HBR reading",
+    "name": "Cookie clearing",
     "version": "1.0",
-    "description": "Remove 3 article limit from HBR",
+    "description": "Remove cookies from specific sites",
     "permissions": ["activeTab", "declarativeContent", "storage", "cookies", "tabs", "http://*/*", "https://*/*"],
     "content_scripts": [
     	{
-        	"matches": ["*://*.hbr.org/*"],
+        	"matches": ["*://*.hbr.org/*", "*://*.medium.com/*", "*://*.economist.com/*"],
     	    "js": ["js/content.js"]
    	 	}
 	],
