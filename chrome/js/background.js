@@ -42,5 +42,14 @@ chrome.runtime.onMessage.addListener(
 
             var economist = promise("https://economist.com");
             economist.then(clearCookies);
+
+            var atlantic = promise("https://theatlantic.com");
+            atlantic.then(clearCookies)
+
+            var newyorker = promise("https://newyorker.com");
+            newyorker.then(clearCookies)
+
+            var nytimes = promise("https://nytimes.com");
+            nytimes.then(clearCookies)
         }
     });

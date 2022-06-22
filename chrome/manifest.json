@@ -5,7 +5,7 @@
     "permissions": ["activeTab", "declarativeContent", "storage", "cookies", "tabs", "http://*/*", "https://*/*"],
     "content_scripts": [
     	{
-        	"matches": ["*://*.hbr.org/*", "*://*.medium.com/*", "*://*.economist.com/*"],
+        	"matches": ["*://*.hbr.org/*", "*://*.medium.com/*", "*://*.theatlantic.com/*", "*://*.newyorker.com/*", "*://*.nytimes.com/*"],
     	    "js": ["js/content.js"]
    	 	}
 	],
